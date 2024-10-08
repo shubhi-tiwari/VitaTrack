@@ -1,0 +1,51 @@
+/* Display.css */
+.display-container {
+    display: flex; /* Use Flexbox to arrange items */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .display {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Rounded corners */
+    width: calc(50% - 10px); /* Adjust width to fit two displays with margin between them */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  .light .display {
+    background-color: #6D9AC2; /* Light background color in light mode */
+  }
+  
+  .dark .display {
+    background-color: #152634; /* Dark background color in dark mode */
+  }
+  
+  .display h2 {
+    margin: 0;
+  }
+  
+  .display p {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 767px) {
+    .display {
+      width: 100%; /* Set width to 100% for column layout on small screens */
+      margin-right: 0; /* Remove right margin */
+    }
+  
+    .display:not(:last-child) {
+      margin-bottom: 10px; /* Add bottom margin to all displays except the last one */
+    }
+  }
+  
+  .gauge-container {
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    margin: 0 auto; /* Centers the gauge horizontally */
+  }
+  

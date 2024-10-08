@@ -1,0 +1,143 @@
+/* Sidebar container */
+.side-bar {
+  width: var(--sidebar-width);
+  height: 320px;
+  padding: 2.1rem 0.5REM;
+  position: fixed;
+  top: 187px;
+  left: 0px;
+  transition: width 0.3s ease; /* Transition for width change */
+  z-index: 4;
+  border-top-right-radius: 20px; /* Round the top right corner */
+  border-bottom-right-radius: 20px; /* Round the bottom right corner */
+}
+.sidebar a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+
+.sidebar{
+  padding-top: 65px;
+}
+/* Logo and arrow button wrapper */
+.logo-name-wrapper {
+  position: relative;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+/* Arrow button */
+.logo-name__button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Icon inside the arrow button */
+.logo-name__icon {
+  color: #b5b5be;
+}
+
+/* Button container */
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common styles for all buttons */
+.sidebar-button {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0.2rem;
+  margin-bottom: 0.8rem;
+  border: none;
+  background-color: transparent;
+  color: #b5b5be;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button icon */
+.button-icon {
+  font-size: 1.8rem;
+  margin-right: 0.8rem;
+}
+
+/* Chart button */
+.chart-button:hover {
+  color: #1e75ff;
+}
+
+/* Progress button */
+.progress-button:hover {
+  color: #79d861;
+}
+
+/* Alert button */
+.alert-button:hover {
+  color: #c43c5d;
+}
+.logout-button:hover {
+  color: #d39611;
+}
+/* Collapsed state */
+.side-bar.collapse {
+  --sidebar-width: 3rem;
+}
+
+/* Expanded state */
+.side-bar:not(.collapse) {
+  --sidebar-width: 12rem;
+}
+/* Hide text in buttons when collapsed */
+.side-bar.collapse .sidebar-button .button-text {
+  display: none;
+}
+
+/* Light mode background color */
+.light-mode .side-bar{
+  background-color: #8BAECD; /* Change to your desired light mode background color */
+}
+
+.light-mode .sidebar-button {
+  color: #333333; /* Change to your desired light mode hover background color */
+}
+.light-mode .logo-name__icon {
+  color: #333333;
+}
+/* Chart button */
+.light-mode .chart-button:hover {
+  color: #1e75ff;
+}
+
+/* Progress button */
+.light-mode .progress-button:hover {
+  color: #79d861;
+}
+
+/* Alert button */
+.light-mode .alert-button:hover {
+  color: #c43c5d;
+}
+.light-mode .logout-button:hover {
+  color: #d39611;
+}
+
+/* Dark mode background color */
+.dark-mode .side-bar {
+  background-color: #437AAA; /* Change to your desired dark mode background color */
+}
+.logout-button {
+  text-decoration: none;
+    font-family: 'Inter';
+    font-size: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}

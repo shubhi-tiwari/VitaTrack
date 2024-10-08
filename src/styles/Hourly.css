@@ -1,0 +1,100 @@
+/* Hourly.css */
+
+body {
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .hourly-container {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes the full height of the viewport */
+  }
+  
+  .hourly-title {
+    text-align: center; /* Adjust as needed */
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #1F3C56; /* Default color for light mode */
+    background: #1F3C56;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  .hourly-title.dark {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+        color: #ECC914; /* Default color for light mode */
+        /* Add gradient for aesthetic effect */
+        background: #ECC914;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+  
+  .hourly-chart-container {
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  
+  
+  /* Dark mode */
+  .dark {
+    background-color: #152634;
+    color: #fff;
+  }
+  
+  .dark .hourly-chart {
+  }
+  
+  /* Light mode */
+  .light {
+    background-color:#6D9AC2 ;
+    color: #333;
+  }
+  
+  .light .hourly-chart {
+    background-color: #6D9AC2;
+  }
+  
+  
+  .toggle-button.active {
+  }
+  
+/* Hourly.css */
+.toggle-buttons {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .toggle-button.temperature {
+    background-color: rgba(75, 192, 192, 1); /* Temperature color */
+    color: #fff;
+  }
+  
+  .toggle-button.heart-rate.light {
+    background-color: rgba(255, 99, 132, 1); /* Heart Rate color */
+    color: #fff;
+  }
+  .toggle-button.temperature.light {
+    background-color: rgba(75, 192, 192, 1); /* Temperature color */
+    color: #fff;
+  }
+  
+  .toggle-button.temperature.active {
+    background-color: rgba(75, 192, 192, 1); /* Temperature color */
+    color: #fff;
+  }
+  .toggle-button.heart-rate.active {
+    background-color: rgba(255, 99, 132, 1); /* Heart Rate color */
+    color: #fff;
+  }

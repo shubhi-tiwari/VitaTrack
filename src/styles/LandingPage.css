@@ -1,0 +1,200 @@
+.landing {
+    text-align: center;
+  }
+  
+  .landing-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .landing-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .landing-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition color changes */
+  }
+  
+  .landing {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: 16px;
+    z-index: 1000; /* Ensure the button is above other content */
+  }
+  
+  .dark .theme-toggle {
+    color: #ffffff; /* Dark mode text color */
+  }
+  
+  .dark .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Dark mode hover background color */
+  }
+  
+  .dark {
+    color: #ffffff; /* Dark mode text color for the entire page */
+  }
+  
+  .dark h1 {
+    color: #ffffff; /* Dark mode text color for headings */
+  }
+  
+  .App {
+    width: 100%; /* Set the width of the app to 100% */
+  }
+  
+  /* Default styles for graph-container */
+  .graph-container {
+    width: 100%; /* Set the width of the graph container to 100% */
+    display: flex;
+    flex-wrap: wrap; /* Allow graphs to wrap to the next row */
+  }
+  
+  /* Styles for graph items */
+  .graph-item {
+    width: 100%; /* Each graph occupies full width by default */
+  }
+  
+  /* Media query for large screens */
+  @media screen and (min-width: 768px) {
+    .graph-item {
+      width: 50%; /* Each graph occupies 50% width on large screens */
+    }
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .toggle-button.active {
+    background-color: #75c4c4;
+    color: #fff;
+  }
+  .toggle-button.dark{
+    background-color: #282c34;
+  }
+  
+  .App {
+    /* Default styles for the app */
+    transition: background-color 0.3s ease;
+  }
+  
+  .landing.light {
+    /* Light mode styles */
+    background-color: #6D9AC2;
+  }
+  
+  .landing.dark {
+    /* Dark mode styles */
+    background-color: #152634;
+  }
+  
+  .greeting-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .greeting.light {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #1F3C56; /* Default color for light mode */
+    background: #1F3C56;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .greeting.dark {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+        color: #ECC914; /* Default color for light mode */
+        /* Add gradient for aesthetic effect */
+        background: #ECC914;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+  .date {
+    font-size: 1.2rem; /* Adjust font size */
+    color: #666; /* Default color for light mode */
+    margin-top: 5px; /* Adjust spacing between greeting and date */
+  }
+  
+  /* Text shadow properties for light mode */
+.greeting.light-mode {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Black text shadow in light mode */
+  }
+  
+  /* Text shadow properties for dark mode */
+  .greeting.dark-mode {
+    text-shadow: 2px 2px 4px rgba(192, 192, 192, 0.5); /* Silver text shadow in dark mode */
+  }
+  .alert {
+  padding: 10px;
+  background-color: #f8d7da; /* Red background color */
+  border: 1px solid #f5c6cb; /* Red border color */
+  color: #721c24; /* Red text color */
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.alert.light {
+  background-color: #f8d7da; /* Light mode background color */
+  border-color: #f5c6cb; /* Light mode border color */
+  color: #721c24; /* Light mode text color */
+}
+
+.alert.dark {
+  background-color: #591416; /* Dark mode background color */
+  border-color: #3a0d0a; /* Dark mode border color */
+  color: #f8d7da; /* Dark mode text color */
+}

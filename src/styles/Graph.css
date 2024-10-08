@@ -1,0 +1,90 @@
+.graph-container {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px;
+  }
+  
+  .date-selectors {
+    display: flex;
+    justify-content: center; /* Align items horizontally to the center */
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .date-selectors button {
+    padding: 8px 16px;
+    margin: 0 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #75c4c4;
+    cursor: pointer;
+  }
+  
+  .date-selectors button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .date-selectors input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .date-selectors input[type="date"]:focus {
+    outline: none;
+    border-color: #75c4c4;
+  }
+  
+  .date-selector-icon {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #75c4c4; /* Light gray background */
+  }
+  
+  .date-selector-icon:hover {
+    background-color: #ddd; /* Darker gray background on hover */
+  }
+  
+  .date-selectors {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+/* Common styles for both light and dark modes */
+.toggle-button {
+  padding: 8px 16px; /* Adjust padding */
+  font-size: 16px; /* Adjust font size */
+  border: 2px solid #666; /* Add border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for background color, text color, and border color */
+}
+
+/* Light mode styles */
+.light .toggle-button {
+  background-color: rgba(102, 102, 102, 1); /* Translucent grey background color */
+  color: #ccc; /* Grey text color */
+}
+
+

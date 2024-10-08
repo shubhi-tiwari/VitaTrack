@@ -1,0 +1,92 @@
+/* Alert.css */
+.alert-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    height: 100vh; /* Full height */
+  }
+  
+  .alert-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .alert-content h2 {
+    margin-bottom: 20px;
+    color: #333; /* Default color for light mode */
+  }
+  
+  .alert-content form {
+    width: 100%;
+    max-width: 300px; /* Limit form width for better readability */
+  }
+  
+  .alert-content form div {
+    margin-bottom: 10px;
+  }
+  
+  .alert-content form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Default color for light mode */
+  }
+  
+  .alert-content form input,
+  .alert-content form button {
+    width: 100%;
+    padding: 10px; /* Adjust padding to match button height */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Add border for input boxes */
+    border-radius: 5px; /* Add border radius for input boxes */
+    background-color: #f9f9f9; /* Light background color for input boxes */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode/light mode */
+  }
+  
+  .alert-content form input::placeholder {
+    color: #999; /* Placeholder color */
+  }
+  
+  .alert-content form button.dark {
+    width: 323.2px;
+    margin-top: 20px; /* Adjust margin to separate button from inputs */
+    background-color: #6D9AC2;
+    color: #1F3C56;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .alert-content form button.dark:hover {
+    background-color: #88BEEE;
+  }
+  .alert-content form button.light {
+    width: 323.2px;
+    margin-top: 20px; /* Adjust margin to separate button from inputs */
+    background-color: #1F3C56;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .alert-content form button.light:hover {
+    background-color: #152634;
+  }
+  
+  /* Dark mode styles */
+  .dark .alert-content h2,
+  .dark .alert-content form label {
+    color: #eee; /* Text color for dark mode */
+  }
+  
+  .dark .alert-content form input{
+    background-color: #333; /* Background color for dark mode */
+    color: #eee; /* Text color for dark mode */
+    border-color: #555; /* Border color for dark mode */
+  }
+  
+  .dark .alert-content form input::placeholder {
+    color: #aaa; /* Placeholder color for dark mode */
+  }
+  

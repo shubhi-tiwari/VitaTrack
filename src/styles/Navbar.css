@@ -1,0 +1,82 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color:#D3EAFE ; 
+     /* Light grey background color */
+    color: #000000; /* Default text color */
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+  }
+  
+  .dark .navbar {
+    background-color:#88BEEE ;  
+    /* Dark grey background color in dark mode */
+    color: #ffffff; /* White text color in dark mode */
+  }
+
+/* Navbar.css */
+.theme-toggle {
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: 20px;
+  }
+  
+  /* Remove hover effect in dark mode */
+  .dark .theme-toggle:hover {
+    background-color: transparent;
+    color: inherit;
+  }
+  .logo {
+    width: 250px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .theme-toggle {
+    cursor: pointer;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: 20px;
+    position: relative; /* Position relative for absolute positioning */
+  }
+  
+  /* Styles for the theme toggle icon */
+  .theme-toggle img {
+    position: absolute; /* Position the icon absolutely */
+    top: 0; /* Align the icon to the top of the button */
+    left: 50%; /* Align the icon horizontally */
+    transform: translateX(-50%); /* Center the icon horizontally */
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .login-button {
+    background-color: #1f3c56; /* Example background color */
+    color: #fff; /* Example text color */
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-right: 85px;
+    text-decoration: none;
+  }
+
+  @media (max-width: 767px) {
+    .theme-toggle img {
+      position: absolute;
+      top: 0;
+      left: -30px; /* Adjust the left position for smaller screens */
+      width: 30px;
+      height: auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+  .login-button {
+    display: none;
+  }
+}

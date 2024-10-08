@@ -1,0 +1,150 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  
+  .login-logo img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .login-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .login-register {
+    margin-bottom: 20px;
+  }
+  
+  .register-link {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .login-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .login-footer-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .dark-mode {
+    background-color: #152634;
+    color: #fff;
+  }
+  
+  .dark-mode .login-card {
+    background-color: #152634;
+    color: #fff;
+  }
+  
+  .dark-mode .login-input{
+    background-color: #fff;
+    color: #000;
+    border-color: #152634;
+  }
+  .dark-mode .login-btn {
+    width: 104%;
+    background-color: #6D9AC2;
+    color: #152634;
+    border-color: #152634;
+    margin-bottom: 10px;
+  }
+  
+  .dark-mode .login-btn:hover {
+    background-color: #437AAA;
+  }
+  
+  .dark-mode .login-forgot-password,
+  .dark-mode .login-register {
+    color: #fff;
+  }
+  
+  .dark-mode .login-footer-link {
+    color: #adb5bd;
+  }
+  
+  .light-mode {
+    background-color: #6D9AC2;
+    color: #212529;
+  }
+  
+  .light-mode .login-card {
+    background-color: #6D9AC2;
+    color: #212529;
+  }
+  
+  .light-mode .login-input {
+    background-color: #fff;
+    color: #212529;
+    border-color: #ced4da;
+  }
+  .light-mode .login-btn {
+    width: 104%;
+    background-color: #152634;
+    color: #fff;
+    border-color: #ced4da;
+    margin-bottom: 10px;
+  }
+  
+  .light-mode .login-btn:hover {
+    background-color: #3078b8;
+  }
+  
+  .light-mode .login-forgot-password,
+  .light-mode .login-register {
+    color: #152634;
+  }
+  
+  .light-mode .login-footer-link {
+    color: #007bff;
+  }
+  .login-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }

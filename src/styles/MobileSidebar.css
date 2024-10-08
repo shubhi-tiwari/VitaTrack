@@ -1,0 +1,14 @@
+
+@media (min-width: 768px) {
+    .mob-sidebar {
+        display: none; /* Hide by default */
+    }
+    .mob-menu-icon {
+        position: absolute; /* Position the icon absolutely */
+        top: 0; /* Align the icon to the top of the button */
+        left: 50%; /* Align the icon horizontally */
+        transform: translateX(-50%); /* Center the icon horizontally */
+        width: 30px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+}
